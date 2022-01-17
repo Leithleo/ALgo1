@@ -1,0 +1,22 @@
+ALGORITHM algorithm_name
+VAR
+    numWords=0 : INTEGER
+    numSpaces=0 : INTEGER
+    numVowels=0 : INTEGER
+    numChars=0 : INTEGER
+    c : CHAR
+BEGIN
+    
+    WHILE (c!== ".") DO
+        read(c)
+        IF (c==" ") THEN
+            numSpaces= numSpaces+1
+        END_IF
+        numWords=numSpaces+1
+        numChars=numChars+1
+        IF (c==|A| |E| |I| |O| |U| |Y|) THEN
+            numVowels=numVowels+1
+        END_IF
+    END_WHILE
+
+END
